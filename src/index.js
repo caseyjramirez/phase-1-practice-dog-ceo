@@ -63,6 +63,15 @@ function handleDropDownChange(e) {
             renderDogBreeds(breed)
         }
     })
+
+    // getResources(breedUrl)
+    // .then(data => {
+    //     for (let breed in data.message) {
+    //         if(breed[0] === query) {
+    //             renderDogBreeds(breed)
+    //         }
+    //     }
+    // })
 }
 
 
