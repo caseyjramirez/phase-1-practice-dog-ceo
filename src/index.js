@@ -49,7 +49,6 @@ function getDogBreeds() {
 
 function handleDropDownChange(e) {
     const query = e.target.value;
-
     
     clearDogBreeds()
     
