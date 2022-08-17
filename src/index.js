@@ -28,8 +28,6 @@ function renderDogBreeds(data) {
     dogBreeds.append(li)
 }
 
-
-
 /*======================== FUNCTIONS ========================*/
 function getDogImages() {
     getResources(imgUrl)
@@ -37,6 +35,7 @@ function getDogImages() {
 }
 
 function clearDogBreeds() {
+    // -------- USING INNERHTML --------
     // dogBreeds.innerHTML = ''
     
     while(dogBreeds.firstChild) {
@@ -64,6 +63,7 @@ function handleDropDownChange(e) {
         }
     })
 
+    // -------- MAKING A SERVER CALL EACH TIME --------
     // getResources(breedUrl)
     // .then(data => {
     //     for (let breed in data.message) {
@@ -73,8 +73,6 @@ function handleDropDownChange(e) {
     //     }
     // })
 }
-
-
 
 getDogImages()
 getDogBreeds()
